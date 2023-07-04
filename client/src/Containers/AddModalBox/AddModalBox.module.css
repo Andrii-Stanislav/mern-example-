@@ -1,0 +1,15 @@
+@import '../../styles/variables.css';
+
+.iconBox {
+    display: flex;
+}
+
+.titleBox {
+    flex-grow: 2;
+    display: flex; 
+    align-items: center;
+}
+
+.titleBox {
+    flex-grow: 2; 
+}

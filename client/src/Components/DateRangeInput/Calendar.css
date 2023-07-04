@@ -1,0 +1,7 @@
+@import '../../styles/variables.css';
+
+
+.customCalendarDate:hover {
+    background-color: var(--color-light-blue);
+}
+        

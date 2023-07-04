@@ -1,0 +1,51 @@
+@import '../../styles/variables.css';
+
+.box {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fluffyCloudBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.fluffyCloud {
+    fill: var(--color-light-blue);
+    animation: float 2.3s infinite linear;
+}
+
+.shadow {
+    width: 60px;
+    height: 16px;
+    border-radius: 100%;
+    margin-top: 8px;
+    background-color: #919191;
+    opacity: 0.5;
+    animation: change-size 2.3s infinite linear;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes change-size {
+    50% {
+        transform: scaleX(.8);
+    }
+}

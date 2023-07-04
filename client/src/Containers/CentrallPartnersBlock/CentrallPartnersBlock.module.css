@@ -1,0 +1,38 @@
+@import '../../styles/variables.css';
+
+.centrallBlock {
+    display: flex;
+}
+
+.totalLicense {
+    margin-right: 20px;
+}
+
+.totalLicense, .totalPartners {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.partnerCounter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 185px;
+    padding: 0 5px;
+    margin: 0 auto 6px auto;
+    background-color: #F6FBFF;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--color-dark-blue);
+}
+
+.partnerCounterNumber {
+    font-weight: 700;
+    font-size: 36px;
+    margin-right: 11px;
+}

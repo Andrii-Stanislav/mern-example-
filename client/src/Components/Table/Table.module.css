@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+
+
+.table {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    color: var(--color-text);
+}
+
+.noData {
+    padding: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.17;
+    text-align: center;
+    color: var(--color-dark-blue)
+}

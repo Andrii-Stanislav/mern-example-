@@ -1,0 +1,82 @@
+@import '../../styles/variables.css';
+
+.container {
+    position: relative;
+    min-height: calc(100vh - 70px);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 40px;
+    background-color: var(--color-dark-blue);
+}
+
+.topPageRef {
+    position: absolute;
+    top: -60px;
+}
+
+.logoBox {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+}
+
+.logoText {
+    padding-left: 7px;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 1.2;
+    color: var(--color-white);
+}
+
+.redirectBtn {
+    position: relative;
+    padding: 7px 16px;
+    border: 1px solid var(--color-white);
+    border-radius: 4px;
+    color: none;
+    cursor: pointer;
+}
+
+.redirectBtn:hover > .btnText {
+    font-weight: 500;
+}
+
+.btnText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-white);
+}
+
+.main {
+    width: 900px;
+    padding: 25px 15px 55px;
+    margin: 70px auto 0 auto;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.17;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.subTitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--color-text);
+    margin-bottom: 24px;   
+}

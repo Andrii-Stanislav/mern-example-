@@ -1,0 +1,75 @@
+@import '../../styles/variables.css';
+
+.planTitle {
+    padding-top: 8px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--color-dark-blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.goBackToAllPlans {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-accent);
+    cursor: pointer;
+    transition: all 150ms cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.goBackToAllPlans:hover {
+    transform: scale(1.05);
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--color-dark-blue);
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.inputsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 24px;
+    margin-bottom: 24px;
+    padding-top: 20px;
+}
+
+.buttonBox {
+    padding-top: 20px;
+}
+
+.loading {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.infoBox {
+    padding: 50px 10px;
+    text-align: center;
+    color: var(--color-dark-blue);
+}
+
+.invoiceLink {
+    margin-bottom: 15px;
+}
+
+.infoTitle {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}

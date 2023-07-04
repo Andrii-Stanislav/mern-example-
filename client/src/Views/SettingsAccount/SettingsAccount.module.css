@@ -1,0 +1,114 @@
+@import '../../styles/variables.css';
+
+.settingsContainer {
+    padding: 30px 40px;
+}
+
+.subTitle {
+    font-weight: 500;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 1.17;
+    color: var(--color-dark-blue);
+    margin: 0;
+}
+
+.logoBox {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logoBox:hover > .editLogo {
+    opacity: 1;
+}
+
+.editLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(131, 131, 131, 0.1);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: all 150ms linear;
+}
+
+.userInfoBlock {
+    position: relative;
+    display: flex;
+    width: 670px;
+    margin-top: 11px;
+    padding: 30px 0 40px;
+    border-top: 1px solid #E8F3FE;
+}
+
+.planInfoBlock {
+    padding-left: 120px;
+}
+
+.editButton {
+    position: absolute;
+    top: -35px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-dark-blue);
+}
+
+.editButton > span {
+    margin-left: 10px;
+}
+
+.upgradeBtn {
+    position: absolute;
+    top: 65px;
+    right: 115px;   
+}
+
+.inputBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+    border-bottom: 1px solid #E8F3FE;
+}
+
+
+.userInfoLabel {
+    min-width: 140px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    color: #BEBEBE;
+}
+
+.userInfoText, 
+.userInfoPlan {
+    min-width: 150px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+}
+
+.userInfoText {
+    color: var(--color-dark-blue);
+}
+
+.userInfoPlan {
+    color: var(--color-accent);
+}
+
+.userPhone {
+    padding: 7px 15px;
+    color: var(--color-dark-blue);
+}

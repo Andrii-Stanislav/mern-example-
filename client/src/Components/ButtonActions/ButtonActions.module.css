@@ -1,0 +1,41 @@
+@import '../../styles/variables.css';
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 20px;
+
+  border: 1px solid var(--color-dark-blue);
+  border-radius: 4px;
+  outline: none;
+  background-color: #E7F4FF;
+
+  color: var(--color-dark-blue);
+  font-weight: 400;
+  font-size: 14px;
+  transition: all 150ms linear; 
+}
+
+.button:hover {
+  font-weight: 500;
+} 
+
+.button:active {
+  background-color: transparent;
+  color: var(--color-light-blue);
+  border-color: var(--color-light-blue);
+} 
+
+.button path {
+  transition: all 150ms linear; 
+} 
+
+.button:active path {
+  fill: var(--color-light-blue);
+} 
+
+
+.icon {
+  margin-right: 10px; 
+}

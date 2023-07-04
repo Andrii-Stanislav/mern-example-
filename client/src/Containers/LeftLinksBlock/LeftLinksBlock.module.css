@@ -1,0 +1,81 @@
+.leftControlBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.title {
+    margin: 0 0 24px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.17;
+    color: var(--color-dark-blue)
+}
+
+.buttonsBlock {
+    display: flex;
+}
+
+.buttonControl {
+    position: relative;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: var(--color-dark-blue)
+}
+
+.buttonControl > *:not(:first-child) {
+    margin-left: 7px;
+}
+
+.buttonControl:hover {
+    color: var(--color-dark-blue); 
+    text-decoration: none;
+}
+
+.buttonControl:not(:last-child) {
+    margin-right: 20px;
+}
+
+.isRestricted {
+    display: flex;
+    align-items: center;
+    cursor: not-allowed;
+}
+
+.isRestricted * {
+    cursor: not-allowed;
+}
+
+.activeButton {
+    font-weight: 500;
+}
+
+.activeButton::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    display: block;
+    height: 2px;
+    width: 65%;
+    background-color: var(--color-dark-blue);
+}
+
+.hoverInfoBox {
+    padding: 16px;
+    width: 355px;
+}
+
+.hoverInfoText {
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4; 
+    color: var(--color-dark-blue);
+}
+
+.redText {
+    color: #ff0000
+}

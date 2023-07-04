@@ -1,0 +1,15 @@
+@import '../../styles/variables.css';
+
+.controlsBlock {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 24px;
+}
+
+.rightBlock {
+    flex-grow: 2;
+}
+
+.rightBlock > *:first-child {
+    margin-bottom: 10px;
+}

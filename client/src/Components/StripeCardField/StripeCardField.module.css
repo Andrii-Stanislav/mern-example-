@@ -1,0 +1,21 @@
+
+
+.error {
+  /* color: inherit; */
+  color: #E93D3D;
+  display: flex;
+  justify-content: center;
+  padding: 15px 15px 0;
+  font-size: 13px;
+  margin-top: 0px;
+  width: 100%;
+  /* transform: translateY(-15px); */
+  animation: fade 150ms ease-out;
+  animation-delay: 50ms;
+  animation-fill-mode: forwards;
+  will-change: opacity, transform;
+}
+
+.error svg {
+  margin-right: 10px;
+}

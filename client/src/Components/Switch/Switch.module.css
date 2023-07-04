@@ -1,0 +1,37 @@
+@import '../../styles/variables.css';
+
+.container {
+    display: flex;
+    align-items: center;
+
+}
+
+.switchBox {
+    position: relative;
+    margin: 0 30px;
+    width: fit-content;
+}
+
+.time, .timeActive  {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: var(--color-dark-blue);
+}
+
+.timeActive {
+    position: relative;
+    font-weight: 500;
+}
+
+.timeActive::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    display: block;
+    height: 2px;
+    width: 65%;
+    background-color: var(--color-dark-blue);
+}

@@ -1,0 +1,28 @@
+@import '../../styles/variables.css';
+
+.box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.visibleSelect {
+    margin-left: 3px;
+    padding-right: 7px;
+    color: inherit;
+}
+
+.select {
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+}

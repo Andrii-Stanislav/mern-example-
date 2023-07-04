@@ -1,0 +1,128 @@
+@import '../../styles/variables.css';
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.1875;
+    color: inherit;
+}
+
+.container.disabled {
+    pointer-events: none;
+}
+
+.container.disabled path {
+    fill: var(--color-light-grey)
+}
+
+.showBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.showButton {
+    margin-right: 10px;
+}
+
+.editBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    border: 1px solid #E8F3FE;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.buttonCancel, 
+.buttonConfirm {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.buttonCancel::after, 
+.buttonCancel::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 15px;
+    display: block;
+    height: 2px;
+    width: 16px;
+    border-radius: 1px;
+    background-color: var(--color-red);
+}
+
+.buttonCancel::after {
+    transform: rotate(45deg)
+}
+
+.buttonCancel::before {
+    transform: rotate(-45deg)
+}
+
+
+.buttonConfirm::before, 
+.buttonConfirm::after {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #27AE60;
+    border-radius: 1px;
+}
+
+.buttonConfirm::before {
+    left: 7px;
+    top: 17px;
+    height: 2px;
+    width: 8px;
+    transform: rotate(50deg)
+}
+
+.buttonConfirm::after {
+    left: 10px;
+    top: 14px;
+    height: 2px;
+    width: 16px;
+    transform: rotate(-50deg)
+}
+
+.inputBox {
+    position: relative;
+    width: fit-content;
+    height: 32px;
+    padding: 6.5px 7px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.editInput {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% + 10px);
+    height: 100%;
+    padding: 6.5px 7px;
+    color: inherit;
+    text-align: center;
+    border: none;
+    outline: none; 
+}
+
+.editInput::-webkit-outer-spin-button,
+.editInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.editInput {
+  -moz-appearance: textfield;
+}

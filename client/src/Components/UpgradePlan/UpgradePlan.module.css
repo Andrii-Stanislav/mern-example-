@@ -1,0 +1,89 @@
+@import '../../styles/variables.css';
+
+.container {
+    color: var(--color-dark-blue);
+}
+
+.header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.subHeader {
+    display: flex;
+    align-items: flex-start;
+}
+
+.titleCurrentPlan {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 8px;
+    margin-right: 70px;
+}
+
+.currentPlan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+}
+
+.buttonsBox {
+    display: flex;
+}
+
+.buttonsBox > *:not(:first-child) {
+    margin-left: 15px;
+}
+
+
+/* .chousenPlan {
+    width: 125px;
+    text-align: right;
+    margin-right: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    color: rgb(113, 113, 113);
+} */
+
+.plansBox {
+    display: flex;
+}
+
+.plansDescription, .plansColumn {
+    flex-basis: 25%;
+}
+
+.plansColumn {
+    margin-left: 20px;
+}
+
+.plansDescription {
+    padding-top: 88px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+}
+
+.plansDescriptionItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    height: 40px;
+    color: var(--color-dark-blue);
+}
+
+.plansDescriptionItem::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: calc(400% + 60px);
+    height: 1px;
+    background-color: rgba(179, 201, 230, 0.2);;
+}

@@ -1,0 +1,17 @@
+.custom-phone-input {
+    display: block;
+    width: 100% !important;
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.custom-phone-dropdown > .selected-flag:before {
+    border-radius: 19px;
+}
+
+.custom-phone-dropdown > .selected-flag:focus:before, 
+.custom-phone-dropdown > .selected-flag.open:before {
+    border-color: transparent;
+    box-shadow: 0px 1px 4px rgba(0, 133, 125, 0.3) !important;
+}

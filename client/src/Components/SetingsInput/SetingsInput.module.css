@@ -1,0 +1,23 @@
+@import '../../styles/variables.css';
+
+
+.input {
+    display: inline-block;
+    width: 300px;
+    height: fit-content;
+    padding: 7px 15px;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--color-dark-blue);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+}
+
+
+.input:not(:disabled) {
+    background-color: #F8FBFF;
+    border: 1px solid var(--color-dark-blue);
+}

@@ -1,0 +1,9 @@
+@import '../../styles/variables.css';
+
+.main {
+    color: #717171;
+}
+
+.darkBlue {
+    color: var(--color-dark-blue);
+}

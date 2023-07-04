@@ -1,0 +1,32 @@
+@import '../../styles/variables.css';
+
+.container {
+  width: 330px;
+  padding: 24px;
+  box-shadow: 0px 8px 36px rgba(0, 74, 173, 0.16);
+  border-radius: 8px;
+
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 1.17;
+  color: black;
+}
+
+.text {
+  margin-bottom: 24px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.17;
+  color: rgba(21, 25, 32, 0.5);
+}
+
+.buttonsBox > *:not(:last-child) {
+  margin-bottom: 16px;
+}

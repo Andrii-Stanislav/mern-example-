@@ -1,0 +1,48 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "14.x"
+  },
+  "main": "app.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app.js",
+    "server": "nodemon app.js",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "andrii_stanislav <stanislav.andrii@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.4",
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "form-data": "^4.0.0",
+    "generate-password": "^1.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash.debounce": "^4.0.8",
+    "morgan": "^1.10.0",
+    "mssql": "^7.1.0",
+    "react-toastify": "^7.0.4",
+    "stripe": "^8.151.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "concurrently": "^6.0.2",
+    "cross-env": "^7.0.3",
+    "dotenv": "^8.5.1",
+    "nodemon": "^2.0.7"
+  }
+}

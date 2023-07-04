@@ -1,0 +1,120 @@
+@import '../../styles/variables.css';
+
+.formBox {
+    position: relative;
+}
+
+
+.partOfForm {
+    padding: 16px 24px 24px;
+    width: 325px;
+}
+
+.subtitle {
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    font-size: 14px;    
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.label > *:first-child {
+    margin-right: 5px;
+}
+
+.label>*:nth-child(2) {
+    cursor: pointer;
+}
+
+.inputBox {
+    margin-bottom: 16px;
+}
+
+.nextStep {
+    position: relative;
+}
+
+.nextStep > *:first-child {
+    position: absolute;
+    top: 17px;
+    right: 85px;
+    z-index: 3;
+}
+
+
+.prevStep {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-dark-blue);
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.prevStep:hover {
+    font-weight: 500;
+}
+
+.prevStep > *:first-child {
+    position: absolute;
+    top: 17px;
+    left: 75px;
+    z-index: 3;
+    transform: rotate(180deg)
+}
+
+.prevStep>*:first-child path {
+    fill: var(--color-dark-blue);
+}
+
+.checkbox {
+    padding-bottom: 10px;
+}
+
+.signInButton {
+    padding-top: 16px;
+}
+
+.affiliate {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.187;
+}
+
+.affiliateNickName {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--color-light-blue);
+}
+
+.hoverInfoBox {
+    width: fit-content;
+    padding: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--color-text);
+}
+
+.hoverInfoBox ul {
+    padding-left: 15px;
+    margin: 0;
+}

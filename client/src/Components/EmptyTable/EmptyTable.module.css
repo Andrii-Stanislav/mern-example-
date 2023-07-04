@@ -1,0 +1,39 @@
+@import '../../styles/variables.css';
+
+.container {
+    position: relative;
+    background-color: #F6FBFF;
+    min-height: 400px;
+}
+
+.licenses, .subPartners, .referrals, .transaction {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-top: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+    color: var(--color-light-grey);
+    text-align: center;
+}
+
+.licenses {
+    background-image: url(../../images/Licenses.svg);
+}
+
+.subPartners {
+    background-image: url(../../images/SubPartners.svg);
+}
+
+.referrals {
+    background-image: url(../../images/Referrals.svg);
+}
+
+.transaction {
+    background-image: url(../../images/Transaction.svg);
+}

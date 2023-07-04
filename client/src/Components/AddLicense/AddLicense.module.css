@@ -1,0 +1,21 @@
+@import '../../styles/variables.css';
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.17;
+    color: var(--color-dark-blue);
+    margin-bottom: 12px;
+}
+
+.label:nth-child(n+2) {
+    margin-top: 24px;
+}
+
+.addLicenseButton {
+    margin-top: 36px;
+}
+
+.appBox {
+    padding: 16px 0 ;
+}

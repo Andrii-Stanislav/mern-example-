@@ -1,0 +1,111 @@
+@import '../../styles/variables.css';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 1300px;
+  padding: 15px 40px;
+  background-color: var(--color-white);
+  box-shadow: 0px 2px 5px rgba(100, 100, 100, 0.102);
+}
+
+.mainNav {
+  display: flex;
+  align-items: center;
+}
+
+.mainNav > *:first-child {
+  margin-right: 40px;
+}
+
+.navLink {
+  position: relative;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.17;
+  text-decoration: none;
+  color: var(--color-light-blue);
+}
+
+.navLink:not(:last-of-type) {
+  margin-right: 40px;
+}
+
+.navLink:hover {
+  text-decoration: none;
+}
+
+.activeLink {
+  font-weight: 500;
+}
+
+.activeLink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  display: block;
+  height: 2px;
+  width: 65%;
+  background-color: var(--color-light-blue);
+}
+
+.userNav {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.17;
+  color: var(--color-light-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.notDecorateNavLink {
+  text-decoration: none;
+}
+
+.userName:hover {
+  text-decoration: none;
+}
+
+.linkIsCoppied {
+  position: relative;
+  padding: 7px 7px 7px 31px;
+  background-color: #27AE60;
+  color: var(--color-white);
+  border-radius: 4px;
+  cursor: pointer;
+}
+/*  */
+
+.linkIsCoppied::before,
+.linkIsCoppied::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background-color: var(--color-white);
+  border-radius: 1px;
+}
+
+.linkIsCoppied::before {
+  left: 7px;
+  top: 21px;
+  height: 2px;
+  width: 8px;
+  transform: rotate(50deg)
+}
+
+.linkIsCoppied::after {
+  left: 10px;
+  top: 18px;
+  height: 2px;
+  width: 16px;
+  transform: rotate(-50deg)
+}

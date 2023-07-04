@@ -1,0 +1,66 @@
+@import '../../styles/variables.css';
+
+.goBackBtn {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.17;
+    color: #717171;
+    cursor: pointer;
+    padding-bottom: 18.5px;
+}
+
+.goBackBtn > *:first-child {
+    margin-right: 15px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 28px;
+    font-style: normal;
+    line-height: 1.17;
+    color: var(--color-dark-blue);
+    margin: 0;
+}
+
+.buttonsBlock {
+    display: flex;
+    padding: 20px 0;
+}
+
+.buttonControl {
+    position: relative;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.17;
+    text-decoration: none;
+    color: var(--color-dark-blue)
+}
+
+.buttonControl:hover {
+    color: var(--color-dark-blue);
+    text-decoration: none;
+}
+
+.buttonControl:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.activeButton {
+    font-weight: 500;
+}
+
+.activeButton::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    display: block;
+    height: 2px;
+    width: 65%;
+    background-color: var(--color-dark-blue);
+}
